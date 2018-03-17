@@ -266,24 +266,25 @@ const uint8_t CustomHID_StringLangID[CUSTOMHID_SIZ_STRING_LANGID] =
   }
   ; /* LangID = 0x0409: U.S. English */
 
+ 
 const uint8_t CustomHID_StringVendor[CUSTOMHID_SIZ_STRING_VENDOR] =
   {
     CUSTOMHID_SIZ_STRING_VENDOR, /* Size of Vendor string */
     USB_STRING_DESCRIPTOR_TYPE,  /* bDescriptorType*/
     /* Manufacturer: "STMicroelectronics" */
-    'S', 0, 'T', 0, 'M', 0, 'i', 0, 'c', 0, 'r', 0, 'o', 0, 'e', 0,
-    'l', 0, 'e', 0, 'c', 0, 't', 0, 'r', 0, 'o', 0, 'n', 0, 'i', 0,
-    'c', 0, 's', 0
+    'B', 0, 'o', 0, 'm', 0, 'j', 0, 'E', 0, 'l', 0, 'e', 0, 'c', 0,
+    't', 0, 'r', 0, 'o', 0, 'n', 0, 'i', 0, 'c', 0, 's'
   };
+
 
 const uint8_t CustomHID_StringProduct[CUSTOMHID_SIZ_STRING_PRODUCT] =
   {
     CUSTOMHID_SIZ_STRING_PRODUCT,          /* bLength */
     USB_STRING_DESCRIPTOR_TYPE,        /* bDescriptorType */
-    'S', 0, 'T', 0, 'M', 0, '3', 0, '2', 0, ' ', 0, 'C', 0,
-    'u', 0, 's', 0, 't', 0, 'm', 0, ' ', 0, 'H', 0, 'I', 0,
-    'D', 0
+    'B', 0, 'o', 0, 'm', 0, 'j', 0, ' ', 0, 'D', 0, 'e', 0,
+    'v', 0, 'i', 0, 'c', 0, 'e', 0
   };
+  
 uint8_t CustomHID_StringSerial[CUSTOMHID_SIZ_STRING_SERIAL] =
   {
     CUSTOMHID_SIZ_STRING_SERIAL,           /* bLength */

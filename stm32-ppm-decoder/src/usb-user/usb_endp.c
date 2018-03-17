@@ -77,14 +77,7 @@ void EP1_OUT_Callback(void)
   switch (Receive_Buffer[0])
   {
     case 1: /* Led 1 */
-     if (Led_State != Bit_RESET)
-     {
-       STM_EVAL_LEDOn(LED1);
-     }
-     else
-     {
-       STM_EVAL_LEDOff(LED1);
-     }
+     GPIO_WriteBit(GPIOC, GPIO_Pin_13, Led_State);
      break;
     case 2: /* Led 2 */
      if (Led_State != Bit_RESET)

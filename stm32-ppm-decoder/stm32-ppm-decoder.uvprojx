@@ -425,6 +425,11 @@
               <FileType>1</FileType>
               <FilePath>.\src\usb-user\usb_pwr.c</FilePath>
             </File>
+            <File>
+              <FileName>usb_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\usb-user\usb_conf.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -502,12 +507,6 @@
     <components>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.2" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.1.0"/>
-        <targetInfos>
-          <targetInfo name="stm32f103"/>
-        </targetInfos>
-      </component>
-      <component Cclass="Device" Cgroup="DMA" Cvendor="Keil" Cversion="1.2" condition="STM32F1xx CMSIS">
-        <package name="STM32F1xx_DFP" schemaVersion="1.4.0" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
         <targetInfos>
           <targetInfo name="stm32f103"/>
         </targetInfos>
