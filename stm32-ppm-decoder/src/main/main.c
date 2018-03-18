@@ -5,23 +5,29 @@
 #include "hw_config.h"
 #include "usb_lib.h"
 #include "usb_pwr.h"
+#include "config.h"
 
 __IO uint8_t PrevXferComplete = 1;
-__IO uint8_t Send_Buffer[2];
+__IO uint8_t Send_Buffer[100];
 
 void SendUsb()
 {
-    Send_Buffer[0] = 0x07;
+    Send_Buffer[0] = 0x01;
+    
+   
     
     if ((PrevXferComplete) && (bDeviceState == CONFIGURED))
     {
-      Send_Buffer[1] = 1;
-        
-      /* Write the descriptor through the endpoint */
-      USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, 2);  
-      SetEPTxValid(ENDP1);      
-      PrevXferComplete = 0;
-      GPIOC->ODR^=GPIO_Pin_13;
+        Send_Buffer[1] = 1;
+        Send_Buffer[2] = 2;
+        Send_Buffer[3] = 3;
+          
+            
+        /* Write the descriptor through the endpoint */
+        USB_SIL_Write(EP1_IN, (uint8_t*) Send_Buffer, MAX_PPM_CHANNELS + 1);  
+        SetEPTxValid(ENDP1);      
+        PrevXferComplete = 0;
+        GPIOC->ODR^=GPIO_Pin_13;
     }
 }
 

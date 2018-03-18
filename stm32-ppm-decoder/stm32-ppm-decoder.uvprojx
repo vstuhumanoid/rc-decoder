@@ -390,6 +390,11 @@
               <FileType>1</FileType>
               <FilePath>.\src\main\stm32_it.c</FilePath>
             </File>
+            <File>
+              <FileName>config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\main\config.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

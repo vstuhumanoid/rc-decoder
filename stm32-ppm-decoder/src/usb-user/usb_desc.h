@@ -45,6 +45,9 @@
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported define -----------------------------------------------------------*/
+
+#define wMaxPacketSize                          0x40
+
 #define USB_DEVICE_DESCRIPTOR_TYPE              0x01
 #define USB_CONFIGURATION_DESCRIPTOR_TYPE       0x02
 #define USB_STRING_DESCRIPTOR_TYPE              0x03
@@ -57,7 +60,7 @@
 
 #define CUSTOMHID_SIZ_DEVICE_DESC               18
 #define CUSTOMHID_SIZ_CONFIG_DESC               41
-#define CUSTOMHID_SIZ_REPORT_DESC               163
+#define CUSTOMHID_SIZ_REPORT_DESC               23//157//163
 #define CUSTOMHID_SIZ_STRING_LANGID             4
 #define CUSTOMHID_SIZ_STRING_VENDOR             32 //38
 #define CUSTOMHID_SIZ_STRING_PRODUCT            24 //32
